@@ -1,0 +1,263 @@
+.main-wrapper.gamemode{
+    display: flex;
+    min-height: 100vh;
+    height: fit-content;
+    justify-content:flex-start;
+    flex-direction: column;
+    padding-top: 10px;
+    gap: 30px;
+}
+.main-wrapper.manacube{
+    display: flex;
+    min-height: 85vh;
+    height: fit-content;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+.manacube-title{
+    font-size:2.3em;
+    padding-bottom: 50px;
+}
+.hr-half{
+    width: 80%;
+    margin: auto;
+}
+.search-form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.Search-icon{
+    position: absolute;
+    left: 760px;
+}
+.searchPlayer{
+    padding: 10px;
+    border: none;
+    width: 30%;
+    min-width: 200px;
+    padding: 10px 50px;
+    font-size: 1.25em;
+    color: black;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+    border-left: 2px solid lightgray;
+    background-color: none;
+    background-position: 10px 50%; 
+    background-repeat: no-repeat;
+    background-image: url("../images/search.png");
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+::placeholder {
+    color: rgba(0, 0, 0, 0.733);
+}
+.search-wrapper{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.select {
+    position: relative;
+    min-width: 140px;
+}
+.select select {
+    -webkit-appearance: none;
+    padding:7px;
+    width: 100%;
+    border: 1px solid #e8eaed;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: none;
+    background-position: 97% 50%; 
+    background-repeat: no-repeat;
+    background-image: url("../images/dropdown.png");
+    box-shadow: 0 1px 3px -2px #9098a9;
+    cursor: pointer;
+    font-family: inherit;
+    transition: all 150ms ease;
+    font-size: 1.25em;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+}
+.select select:required:invalid {
+    color: #5a667f;
+}
+.select select option {
+    color: black;
+    background: white;
+}
+.select select:focus {
+    outline: none;
+}
+.select select:hover{
+    stroke: #07f;
+}
+.gamemode-wrapper{
+    height: fit-content;
+    width: 60%;
+    min-width: 400px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: white;
+}
+.sva{
+    min-height: 300px;
+    width: 70%;
+    min-width: 450px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    background:#2a2e31;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding-bottom: 25px;
+}
+.userSVA{
+    min-height: 300px;
+    width: 20%;
+    min-width: 350px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    background:#25292c;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding-bottom: 25px; 
+}
+.server{
+    height: 100px;
+    min-width: 300px;
+    margin: 10px 10px;
+    border-radius: 5px;
+    padding: 0px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    color: white;
+    background:#25292c;
+    box-shadow: rgba(0, 0, 0, 0.555) 0px 5px 15px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.1s
+}
+.server:hover{
+    background:#1f4b6d;
+}
+.displayName{
+    padding: 25px;
+    font-weight: 500;
+}
+.svaContent{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0px 25px;
+}
+.noItems{
+    color: white;
+    justify-content: center;
+    font-size: 1.5em;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+}
+.manacube-info{
+    height: 30px;
+    color: white;
+    width: 200px;
+    display: flex;
+}
+.user-info{
+    height: 30px;
+    color: white;
+    width: 100%;
+    display: flex;
+}
+.info-wrapper{
+    width: 30%;
+    min-height: 200px;
+}
+.user-info-wrapper{
+    width: 100%;
+    min-height: 200px;
+}
+.sva-wrapper{
+    display: flex;
+    width: 100%;
+    min-height: 80vh;
+    height: fit-content;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding-top: 10px;
+}
+.gamemode-wrapper-search{
+    height: fit-content;
+    width: 60%;
+    min-width: 400px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: white;
+    padding-bottom: 200px;
+}
+hr{
+    width:100%;
+    margin-left:0
+}
+@media only screen and (max-width: 1000px) {
+    .sva{
+        width: 90%;
+        min-width: 90%;
+        height: fit-content;
+        padding-bottom: 25px;
+    }
+    .svaContent{
+        flex-direction: column;
+        max-height: fit-content;
+    }
+    .info-wrapper{
+        width: 100%;
+    }
+    .enchants{
+        width: 100%;
+    }
+    .search-form{
+        flex-direction: column;
+    }
+    .searchPlayer,
+    #select{
+        border-radius: 5px;
+        border-left: none;
+        width: 90%;
+    }
+    .select{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+}
+@media only screen and (max-width: 550px) {
+    .noItems{
+        text-align: center;
+    }
+    hr{
+        width: 100%;
+    }
+}

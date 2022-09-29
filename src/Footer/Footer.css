@@ -1,0 +1,26 @@
+footer{
+    background: rgba(23,23,23);
+    color: gray;
+    display: flex;
+    flex-direction: column;
+    padding: 2em 0em;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    height: fit-content;
+    gap: 10px;
+    width: 100%;
+}
+.footer-links{
+    color: rgba(115,115,115);
+    font-size: 1em;
+    padding: 10px;
+    transition: 0.2s;
+    text-decoration: none;
+}
+.footer-links:hover{
+    color: white;
+}
+.footer-copyright{
+    color: #525252
+}

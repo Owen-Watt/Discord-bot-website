@@ -1,0 +1,9 @@
+.terms-wrapper{
+    width: 60%;
+    height: fit-content;
+    background: #1a1e22;
+    padding: 100px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
