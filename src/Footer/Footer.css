@@ -24,3 +24,13 @@ footer{
 .footer-copyright{
     color: #525252
 }
+
+@media only screen and (max-width: 800px) {
+    .socials{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0px 50px;
+    }
+
+  }
