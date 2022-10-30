@@ -9,7 +9,7 @@ function NotFound() {
   return (
     <>
     <Helmet>
-      <title>Not Found | Owen Watt</title>
+      <title>Not Found | Tokyo</title>
     </Helmet>
 
     <div className = "background">
