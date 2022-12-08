@@ -17,7 +17,7 @@ function Home() {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    axios.get("https://tokyo-backend.herokuapp.com/api").then((response) =>{
+    axios.get("https://tokyobackend.fly.dev/api").then((response) =>{
       setStatistics(response.data.stats)
       setLoading(false)
     }).catch(err => {
