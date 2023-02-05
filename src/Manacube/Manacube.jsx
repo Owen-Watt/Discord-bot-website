@@ -44,22 +44,7 @@ function Manacube() {
             setError(false);
         }; 
 
-        const nonDuplicates = []; // using to avoid duplicates
-        const usedItemNames = []; // using to avoid duplicates
         setGamemode(server)
-        axios.get(`https://api.manacube.com/api/svas/${server}`).then((response) => {
-            var data = response.data
-            setItemsDisplayed([]) // resetting displayed for production as it stacks items on reload otherwise
-            data.forEach((sva) => {
-                if(!usedItemNames.includes(sva.itemType)){
-                    nonDuplicates.push(sva);
-                    usedItemNames.push(sva.itemType)
-                    setItemsDisplayed((itemsDisplayed) => [...itemsDisplayed, sva]);
-                }
-            })
-            setContent(nonDuplicates)
-            setLoading(false)
-        })
     }
     const handleSearch = e => {
         e.preventDefault();
@@ -125,6 +110,7 @@ function Manacube() {
                             <div className="noItems">Showing {itemsDisplayed.length} items</div>
                         </>
                 }
+                <div className='sva-container'>
                 {
                     loading && !error
                     ? <div className="loader"></div>
@@ -146,9 +132,10 @@ function Manacube() {
                                 .replace(/#[a-z0-9]{6}/ig, "") // removing hex code 
                             ) 
                         ))
-                        return <SVA uniqueKey={index} name={displayName} itemType={sva.material} unbreakable={sva.unbreakable} enchants={sva.enchants} originalOwner={sva.originalOwner} lore={lore}/>
+                        return <SVA key={index} name={displayName} itemType={sva.material} unbreakable={sva.unbreakable} enchants={sva.enchants} originalOwner={sva.originalOwner} lore={lore}/>
                     })
                 }
+                </div>
             </div>
         </>
     );

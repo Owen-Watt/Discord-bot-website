@@ -87,7 +87,6 @@ function Home() {
           image={manacubeImage}
           row="row-reverse"
         ></Feature>
-        
       </div>
     </>
   );

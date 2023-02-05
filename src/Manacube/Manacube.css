@@ -111,7 +111,7 @@ textarea:focus, input:focus{
 }
 .sva{
     min-height: 300px;
-    width: 70%;
+    width: 40%;
     min-width: 450px;
     border-radius: 5px;
     display: flex;
@@ -188,12 +188,20 @@ textarea:focus, input:focus{
     display: flex;
 }
 .info-wrapper{
-    width: 30%;
+    width: 45%;
     min-height: 200px;
 }
 .user-info-wrapper{
     width: 100%;
     min-height: 200px;
+}
+
+.sva-container{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
 }
 .sva-wrapper{
     display: flex;
@@ -214,6 +222,9 @@ textarea:focus, input:focus{
     flex-wrap: wrap;
     color: white;
     padding-bottom: 200px;
+}
+.enchants{
+    min-height: 100px;
 }
 hr{
     width:100%;
