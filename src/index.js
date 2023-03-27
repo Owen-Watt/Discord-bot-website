@@ -19,7 +19,7 @@ export default function App() {
           <Route path="terms" element={<TOS />} />
           <Route path="contact" element={<Contact />} />
           <Route path="commands" element={<Commands />} />
-          <Route path="manacube" element={<Manacube />} />
+{/*           <Route path="manacube" element={<Manacube />} /> */}
           <Route path="invite" element={<Invite />} />
           <Route path="*" element ={<NotFound />} />
         </Route>

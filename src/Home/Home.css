@@ -131,6 +131,25 @@ span.stats-text{
   gap: 100px;
   margin-bottom: 200px;
 }
+
+.scroll-button{
+  color: white;
+  font-size: 2em;
+  position: absolute;
+  bottom: 10%;
+  animation: move-up-down 2s ease-in-out infinite;
+}
+@keyframes move-up-down {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 @media only screen and (max-width: 550px) {
   .dashboard-button-wrapper{
     flex-direction: column;

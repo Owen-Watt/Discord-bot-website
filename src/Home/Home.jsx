@@ -6,11 +6,11 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import hugImage from '../images/hug.PNG'
 import coinflipImage from '../images/coinflip.PNG'
-import manacubeImage from '../images/manacube.PNG'
+import welcomeImage from '../images/Welcome.PNG'
 import statsImage from '../images/stats.PNG'
 import Feature from './Feature/Feature'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHeart, faSackDollar, faChartLine, faCube } from '@fortawesome/free-solid-svg-icons'
+import { faHeart, faSackDollar, faChartLine, faCube, faChevronDown } from '@fortawesome/free-solid-svg-icons'
 
 function Home() {
   const [statistics, setStatistics] = useState([{}]);
@@ -33,7 +33,7 @@ function Home() {
       <div className="Home-wrapper">
           <div className="index-title">The Tokyo Discord Bot</div>
           <div className="index-description">
-            Affection, economy and statistics for your Discord server.
+            Affection, economy and statistics and logs for your Discord server.
           </div>
           <section className="stats-wrapper">
             <div className="stat-box" >
@@ -59,6 +59,7 @@ function Home() {
             <Link to="/invite" className="dashboard-button discord-btn"><i className="fa-solid fa-plus link-logo"></i>Invite bot</Link>
             <a href='https://discord.gg/mACacV4eG8' className="dashboard-button support-btn"><i className="fa-brands fa-discord link-logo"></i>Support Server</a>
           </div>
+          <FontAwesomeIcon icon={faChevronDown} style={{color: "White"}}  className="scroll-button"/>
       </div>
       <div className="feature-wrapper">
         <Feature 
@@ -81,10 +82,10 @@ function Home() {
           image={statsImage}
         ></Feature>
         <Feature 
-          icon= {<FontAwesomeIcon icon={faCube} style={{color: "var(--discord)"}}/>}
-          title="Manacube" 
-          text="Tokyo allows you to access Manacube's API, an API with stats and information about the minecraft server Manacube. Commands such as /cubits, /manalevel and more!"
-          image={manacubeImage}
+          icon= {<FontAwesomeIcon icon={faCube} style={{color: "lightblue"}}/>}
+          title="Logs" 
+          text="Tokyo allows you to send Welcome and Leave messages on your server, you can add roles or send messages for either event!"
+          image={welcomeImage}
           row="row-reverse"
         ></Feature>
       </div>

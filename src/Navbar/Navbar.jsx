@@ -22,14 +22,14 @@ function Navbar() {
             <li className="nav-item">
               <Link className="nav-link" to="/commands">Commands</Link>
             </li>
-            <li className="nav-item">
+{/*             <li className="nav-item">
               <Link className="nav-link" to="/manacube">Manacube API</Link>
-            </li>
+            </li> */}
             <li className="nav-item">
               <a className="nav-link" href="https://discord.gg/mACacV4eG8">Support</a>
             </li>
             <li className="nav-item">
-              <Link to="/invite" className="dashboard-button discord-btn-navbar"><i className="fa-solid fa-plus link-logo"></i>Invite bot</Link>
+              <Link to="/invite" className="dashboard-button discord-btn-navbar">Invite bot</Link>
             </li>
           </ul>
 
@@ -42,7 +42,7 @@ function Navbar() {
                 <div className={showMenu ? 'dropdown-menu show' : 'dropdown-menu'}>
                   <Link className="dropdown-item mobile" to="/" onClick={() => setShowMenu(!showMenu)}><div>Home</div></Link>
                   <Link className="dropdown-item mobile" to="/commands" onClick={() => setShowMenu(!showMenu)}><div>Commands</div></Link>
-                  <Link className="dropdown-item mobile" to="/manacube" onClick={() => setShowMenu(!showMenu)}><div>Manacube API</div></Link>
+{/*                   <Link className="dropdown-item mobile" to="/manacube" onClick={() => setShowMenu(!showMenu)}><div>Manacube API</div></Link> */}
                   <a className="dropdown-item mobile" href="https://discord.gg/mACacV4eG8" onClick={() => setShowMenu(!showMenu)}><div>Support</div></a>
                   <hr className="dropdown-divider"/>
                   <Link to="/invite" className="dropdown-item mobile" disabled><div>Invite bot</div></Link>

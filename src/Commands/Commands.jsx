@@ -21,8 +21,8 @@ function Commands() {
                 <div className={(sectionToShow==="Affection")? "category selected-category" : "category"} onClick={changeSection}>Affection</div>
                 <div className={(sectionToShow==="Economy")? "category selected-category" : "category"} onClick={changeSection}>Economy</div>
                 <div className={(sectionToShow==="Statistics")? "category selected-category" : "category"} onClick={changeSection}>Statistics</div>
-{/*                 <div className={(sectionToShow==="Logs")? "category selected-category" : "category"} onClick={changeSection}>Logs</div> */}
-                <div className={(sectionToShow==="Manacube")? "category selected-category" : "category"} onClick={changeSection}>Manacube</div>
+                <div className={(sectionToShow==="Logs")? "category selected-category" : "category"} onClick={changeSection}>Logs</div>
+{/*                 <div className={(sectionToShow==="Manacube")? "category selected-category" : "category"} onClick={changeSection}>Manacube</div> */}
             </div>
 
             <div className="command-wrapper">
@@ -53,12 +53,13 @@ function Commands() {
                     </>
                     )
                     ||
-                    ((sectionToShow==="Manacube") && 
+                    ((sectionToShow==="Logs") && 
                     <>
-                    <CommandPreview usage="cubits [name]" description="View a users cubits balance"/>
-                    <CommandPreview usage="manalevel [name]" description="View a users ManaLevel"/>
-                    <CommandPreview usage="guild [name]" description="View a users guild info"/>
-                    <CommandPreview usage="guildtop" description="View the top guilds"/>
+                    <CommandPreview usage="welcome edit-role [enable-role] [role]" description="Set/toggle welcome role"/>
+                    <CommandPreview usage="welcome toggle [enable/disable]" description="Toggle welcome message"/>
+                    <CommandPreview usage="welcome [channel] [color] [description] [title] [footer] [image]" description="Set welcome message"/>
+                    <CommandPreview usage="leave toggle [enable/disable]" description="Toggle leave message"/>
+                    <CommandPreview usage="leave [channel] [color] [description] [title] [footer] [image]" description="Set leave message"/>
                     </>
                     )
                 }
